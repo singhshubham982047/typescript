@@ -16,7 +16,7 @@
 body {
   margin: 0;
   display: flex;
-
+  padding: 0;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -29,7 +29,7 @@ h1 {
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   text-align: center;
 }
 
@@ -67,4 +67,25 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#tasks {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: auto;
+  border: #747bff 1px solid;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.textCut {
+  text-decoration: line-through;
 }
